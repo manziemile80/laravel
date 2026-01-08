@@ -1,6 +1,9 @@
 @extends('app.layout')
 @section('content')
-<center><h1>THIS IS INDEX PAGE YOU GYUS</h1></center>
+<center><h1 class="fw-bold shadow text-center p-4 rounded hover-effect">
+  THIS IS INDEX PAGE YOU GUYS
+</h1>
+</center>
 <a class="bi bi-plus-circle-fill" href="{{route('student.create')}}">Add new</a><br>
 @if ($message=Session::get('success'))
 {{$message}}
